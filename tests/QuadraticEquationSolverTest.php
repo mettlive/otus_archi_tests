@@ -14,9 +14,9 @@ class QuadraticEquationSolverTest extends TestCase
     public function testNoRealRootsEquation()
     {
         // Arrange
-        $a = 1;  // коэффициент при x^2
-        $b = 0;  // коэффициент при x
-        $c = 1;  // свободный член
+        $a = 1;
+        $b = 0;
+        $c = 1;
 
         // Act
         $roots = $this->solver->solve($a, $b, $c);
@@ -29,9 +29,9 @@ class QuadraticEquationSolverTest extends TestCase
     public function testTwoDistinctRealRoots()
     {
         // Arrange
-        $a = 1;   // коэффициент при x^2
-        $b = 0;   // коэффициент при x
-        $c = -1;  // свободный член
+        $a = 1;
+        $b = 0;
+        $c = -1;
 
         // Act
         $roots = $this->solver->solve($a, $b, $c);
@@ -46,9 +46,9 @@ class QuadraticEquationSolverTest extends TestCase
     public function testOneDistinctRealRoots()
     {
         // Arrange
-        $a = 1;   // коэффициент при x^2
-        $b = 0;   // коэффициент при x
-        $c = -1;  // свободный член
+        $a = 1;
+        $b = 0;
+        $c = -1;
 
         // Act
         $roots = $this->solver->solve($a, $b, $c);
@@ -63,9 +63,9 @@ class QuadraticEquationSolverTest extends TestCase
     public function testOneDoubleRoot()
     {
         // Arrange
-        $a = 1;    // коэффициент при x^2
-        $b = 2;    // коэффициент при x
-        $c = 1;    // свободный член
+        $a = 1;
+        $b = 2;
+        $c = 1;
 
         // Act
         $roots = $this->solver->solve($a, $b, $c);
@@ -94,7 +94,7 @@ class QuadraticEquationSolverTest extends TestCase
         // Arrange
         $a = 1.0;
         $b = 2.0;
-        $c = 1.0 + 1e-12; // Чуть больше 1, что даст дискриминант чуть меньше 0
+        $c = 1.0 + 1e-12;
 
         // Act
         $roots = $this->solver->solve($a, $b, $c);
