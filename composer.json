@@ -1,0 +1,17 @@
+{
+    "name": "mettlive/square-solver",
+    "require": {
+        "phpunit/phpunit": "^12.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mettlive\\SquareSolver\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MettLive",
+            "email": "BeliaevNO@alfastrah.ru"
+        }
+    ]
+}
