@@ -1,11 +1,13 @@
 <?php
 
+namespace Mettlive\SquareSolver\Tests;
 use Mettlive\SquareSolver\IMovable;
 use Mettlive\SquareSolver\Move;
-use Mettlive\SquareSolver\Spaceship;
 use Mettlive\SquareSolver\VO\Point;
 use Mettlive\SquareSolver\VO\Vector;
 use PHPUnit\Framework\TestCase;
+use RuntimeException;
+use TypeError;
 
 class MoveTest extends TestCase
 {
